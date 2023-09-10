@@ -19,6 +19,14 @@
 
 // исправляем, заменяя int на double (контейнер, позволяющий работать с вещественными (дробными) числами)
 
-double numberA = 12;
-double numberB = 5;
-Console.WriteLine(numberA / numberB); // 2
+// double numberA = 12;
+// double numberB = 5;
+// Console.WriteLine(numberA / numberB); // 2
+
+// new Random().Next(min, max). Дает случайное ЦЕЛОЕ число от min до max-1 (т.е. max не входит, как в range)
+
+int numberA = new Random().Next(1, 10); // 1,2,3,..9
+Console.WriteLine(numberA);
+int numberB = new Random().Next(1, 10); // 1,2,3,..9
+Console.WriteLine(numberB);
+Console.WriteLine(numberA + numberB); // 
