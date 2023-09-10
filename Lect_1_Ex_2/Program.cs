@@ -12,11 +12,25 @@
 // Привет, 
 // Elena
 
-Console.Write("Введите ваше имя ");
-string username = Console.ReadLine();
-Console.Write("Привет, ");
-Console.Write(username);
+// Console.Write("Введите ваше имя ");
+// string username = Console.ReadLine();
+// Console.Write("Привет, ");
+// Console.Write(username);
 
 // Введите ваше имя Елена
 // Привет, Елена
 
+// используем оператор ветвления if else для выведения особого приветствия для Маши
+
+Console.Write("Введите ваше имя: ");
+string username = Console.ReadLine();
+
+if (username.ToLower() == "маша") // перевели введенную строку в нижний регистр, чтоб исключить ошибки большая/маленькая буква
+{
+    Console.Write("Ура, это же Маша!");
+}
+else
+{
+    Console.Write("Привет, ");
+    Console.WriteLine(username);
+}
