@@ -50,18 +50,66 @@ int year = Method3();
 // Console.WriteLine(year);
 
 // Group 4
-string Method4(int count, string text)
-{
-    int i = 0; 
-    string result = ""; // = string.Empty
+// string Method4(int count, string text)
+// {
+//     int i = 0; 
+//     string result = ""; // = string.Empty
 
-    while (i < count)
+//     while (i < count)
+//     {
+//         result = result + text;
+//         i++;
+//     }
+//     return result;
+// }
+
+// string res = Method4(10, "testing");
+// Console.WriteLine(res);
+
+// или этот же метод можно записать через цикл For
+// Цикл FOR - цикл со счетчиком
+
+// for (int i = 0; i < 10; i++)
+// {
+//     Console.WriteLine(i)
+// }
+
+// string Method41(int count, string text)
+// {    
+//     string result = ""; // = string.Empty
+//     for (int i = 0; i < count; i++)
+//     {
+//         result = result + text;
+//     }
+//     return result;
+// }
+
+// string res = Method41(10, "testing");
+// Console.WriteLine(res);
+
+// ЦИКЛ В ЦИКЛЕ
+
+// Например, есть прямоугольная область, хотим закрасить (что-то сделать)
+// со всеми строками всех столбиков
+
+for (int i = 0; i < 10; i++)
+{
+    for (int j = 0; j < 10; j++)
     {
-        result = result + text;
-        i++;
+        Console.WriteLine(i * j)
     }
-    return result;
+    Console.WriteLine()
 }
 
-string res = Method4(10, "testing");
-Console.WriteLine(res);
+// Задача - вывод таблицы умножения на экран
+
+for (int i = 2; i <= 10; i++)
+{
+    for (int j = 2; j <= 10; j++)
+    {
+        Console.WriteLine($"{i} x {j} = {i*j}");
+    }
+    Console.WriteLine(); // добавляем искусственно пустую строку между блоками
+}
+
+// $"{i} x {j} = {i*j}" - интерполяция, аналог f-строки из Питона
